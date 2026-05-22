@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Motiva Fleet</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="logo.png">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="logo">
+
+      <img src="logo.png" alt="Logo">
+
+      <h1>Motiva Fleet</h1>
+
+    </div>
+
+    <ul>
+
+      <li>
+        <a href="#home">Home</a>
+      </li>
+
+      <li>
+        <a href="#veiculos">Veículos</a>
+      </li>
+
+      <li>
+        <a href="#usuarios">Usuários</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <header id="home">
+
+    <h2>Gerenciamento Inteligente de Veículos</h2>
+
+    <p>
+      Plataforma parceira da Motiva para controle de frotas
+    </p>
+
+  </header>
+
+  <main>
+
+    <section class="info-cards">
+
+      <div class="mini-card">
+        <h3 id="contador">0</h3>
+        <p>Veículos cadastrados</p>
+      </div>
+
+      <div class="mini-card">
+        <h3>24h</h3>
+        <p>Monitoramento</p>
+      </div>
+
+      <div class="mini-card">
+        <h3>100%</h3>
+        <p>Organização</p>
+      </div>
+
+    </section>
+
+    <section class="container">
+
+      <div class="card" id="usuarios">
+
+        <h2>
+          <i class="fa-solid fa-user"></i>
+          Cadastro de Usuário
+        </h2>
+
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="senha" placeholder="Senha">
+
+        <button onclick="cadastrarUsuario()">
+          Cadastrar Usuário
+        </button>
+
+      </div>
+
+      <div class="card" id="veiculos">
+
+        <h2>
+          <i class="fa-solid fa-car-side"></i>
+          Cadastro de Veículo
+        </h2>
+
+        <input type="text" id="marca" placeholder="Marca">
+        <input type="text" id="modelo" placeholder="Modelo">
+        <input type="number" id="ano" placeholder="Ano">
+        <input type="text" id="placa" placeholder="Placa">
+        <input type="text" id="tipo" placeholder="Tipo">
+
+        <button onclick="cadastrarVeiculo()">
+          Cadastrar Veículo
+        </button>
+
+      </div>
+
+    </section>
+
+    <section class="tabela-card">
+
+      <h2>Veículos Cadastrados</h2>
+
+      <table>
+
+        <thead>
+
+          <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Ano</th>
+            <th>Placa</th>
+            <th>Tipo</th>
+            <th>Ação</th>
+          </tr>
+
+        </thead>
+
+        <tbody id="listaVeiculos">
+
+        </tbody>
+
+      </table>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>
+      © 2026 Motiva Fleet - Sprint 1
+    </p>
+
+  </footer>
+
+  <div id="mensagem"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
